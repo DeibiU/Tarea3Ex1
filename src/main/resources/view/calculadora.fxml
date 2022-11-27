@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="667.0" prefWidth="1089.0" style="-fx-background-color: turquoise;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.calculadora">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="254.0" layoutX="766.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+      <Polygon fill="DODGERBLUE" layoutX="670.0" layoutY="570.0" points="46.0, -42.0, 96.0, 80.0, 97.0, -173.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="DODGERBLUE" layoutX="1020.0" layoutY="455.0" points="0.0, 195.0, 46.0, 80.0, 0.0, -60.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="DODGERBLUE" layoutX="479.0" layoutY="488.0" points="-43.0, 35.5, 237.0, 35.5, 102.0, -352.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="892.0" layoutY="239.0" radius="147.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="236.0" layoutX="27.0" layoutY="392.0" stroke="BLACK" strokeType="INSIDE" width="384.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" layoutX="69.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label layoutX="393.0" layoutY="35.0" prefHeight="61.0" prefWidth="366.0" text="Calculadora Geometrica">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="315.0" text="area=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ladoCuadrado" layoutX="144.0" layoutY="186.0" promptText="longitud del lado" />
+      <Button layoutX="190.0" layoutY="226.0" mnemonicParsing="false" onAction="#calcularCuadrado" prefHeight="12.0" prefWidth="57.0" text="calcular" />
+      <Label fx:id="areaCuadrado" layoutX="210.0" layoutY="315.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="146.0" text="Calcular Cuadrado" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="277.0" text="perimetro=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="perimetroCuadrado" layoutX="228.0" layoutY="277.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="159.0" text="Calcular Triangulo" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="baseTriangulo" layoutX="500.0" layoutY="207.0" promptText="base" />
+      <TextField fx:id="altoTriangulo" layoutX="500.0" layoutY="247.0" promptText="altura" />
+      <TextField fx:id="lado1triangulo" layoutX="500.0" layoutY="288.0" promptText="lado 1" />
+      <TextField fx:id="lado2triangulo" layoutX="500.0" layoutY="323.0" promptText="lado 2" />
+      <TextField fx:id="lado3triangulo" layoutX="500.0" layoutY="353.0" promptText="lado 3" />
+      <Button layoutX="549.0" layoutY="390.0" mnemonicParsing="false" onAction="#calcularTriangulo" text="calcular" />
+      <Label layoutX="507.0" layoutY="477.0" text="area=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="433.0" text="perimetro=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="perimetroTriangulo" layoutX="585.0" layoutY="433.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="areaTriangulo" layoutX="585.0" layoutY="477.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="392.0" text="Calcular Rectangulo" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="largoRectangulo" layoutX="154.0" layoutY="432.0" promptText="largo " />
+      <TextField fx:id="anchoRectangulo" layoutX="154.0" layoutY="472.0" promptText="ancho" />
+      <Button layoutX="200.0" layoutY="510.0" mnemonicParsing="false" onAction="#calcularRectangulo" text="calcular" />
+      <Label layoutX="129.0" layoutY="583.0" text="area=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="546.0" text="perimetro=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="areaRectangulo" layoutX="198.0" layoutY="583.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="perimetroRectangulo" layoutX="217.0" layoutY="546.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="310.0" text="area=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="radioCirculo" layoutX="818.0" layoutY="182.0" promptText="longitud del radio" />
+      <Button layoutX="864.0" layoutY="227.0" mnemonicParsing="false" onAction="#calcularCirculo" prefHeight="12.0" prefWidth="57.0" text="calcular" />
+      <Label fx:id="areaCirculo" layoutX="877.0" layoutY="310.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="810.0" layoutY="146.0" text="Calcular Circulo" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="271.0" text="perimetro=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="perimetroCirculo" layoutX="905.0" layoutY="271.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="581.0" text="area=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ladoHexagono" layoutX="818.0" layoutY="445.0" promptText="longitud del lado" />
+      <Button layoutX="864.0" layoutY="514.0" mnemonicParsing="false" onAction="#calcularHexagono" prefHeight="12.0" prefWidth="57.0" text="calcular" />
+      <Label fx:id="areaHexagono" layoutX="877.0" layoutY="581.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="793.0" layoutY="402.0" text="Calcular Hexagono" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="542.0" text="perimetro=" textFill="#000ac3">
+         <font>
+            <Font name="Vivaldi Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="perimetroHexagono" layoutX="905.0" layoutY="542.0" prefHeight="35.0" prefWidth="111.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apotemaHexagono" layoutX="819.0" layoutY="482.0" promptText="apotema" />
+   </children>
+</AnchorPane>
